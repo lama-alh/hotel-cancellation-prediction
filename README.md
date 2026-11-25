@@ -2,7 +2,7 @@
 
 An end-to-end data project: data cleaning, exploratory analysis, a machine learning model that predicts booking cancellations, an interactive Power BI dashboard, and a live prediction app.
 
-**🔗 Live app:** [ADD_YOUR_STREAMLIT_LINK_HERE](#)
+**🔗 Live app:** [predict-hotel-cancellations.streamlit.app](https://predict-hotel-cancellations.streamlit.app)
 
 ![Dashboard](dashboard.png)
 
