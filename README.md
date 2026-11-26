@@ -43,7 +43,7 @@ The app uses a lighter Random Forest trained on 12 easy-to-enter features (Accur
 ```
 ├── app.py                              # Streamlit prediction app
 ├── model.pkl                           # trained model used by the app
-├── train_model.py                      # script that trains model.pkl
+├── train_model.py                      # script that trains model.pkl (needs hotel_clean.csv)
 ├── requirements.txt
 ├── .streamlit/config.toml              # app theme
 ├── hotel_cancellation_analysis.ipynb   # cleaning, EDA and modeling
@@ -58,6 +58,18 @@ pip install -r requirements.txt
 streamlit run app.py
 ```
 
+## Retrain the app model
+
+`train_model.py` expects `hotel_clean.csv`, which is not stored in this repo to keep it light. To create it, run the notebook on the [Kaggle dataset](https://www.kaggle.com/datasets/jessemostipak/hotel-booking-demand) up to section 6 (*Export the clean data*), then run:
+
+```bash
+python train_model.py
+```
+
 ## Tools
 
 Python (pandas, scikit-learn, matplotlib, seaborn), Power BI, Streamlit
+
+## License
+
+MIT
